@@ -3,10 +3,12 @@ pipeline
 agent any
 stages
 {
-stage{
-steps{
+stage  ('Pls print hello')
+{
 
-('Pls print hello')
+steps {
+sh 'echo hi'
+
 }
 }
 }
