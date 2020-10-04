@@ -15,9 +15,8 @@ sh 'echo hi'
 stage ('copy file to tomcat') {
  steps {
  sshagent(['6fa169b8-4378-4863-a4ee-1a9f534832c5']) {
- sh 'touch /home/ec2-user/test1.txt'
- sleep 300
- 
+ sh 'touch /home/ec2-user/test2.txt'
+  
  }
  
 }
