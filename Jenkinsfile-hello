@@ -15,7 +15,7 @@ sh 'echo hi'
 stage ('copy file to tomcat') {
  steps {
  sshagent(['6fa169b8-4378-4863-a4ee-1a9f534832c5']) {
- sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/jobs/my-first-freestyle-job/test.txt ec2-user@3.135.220.83:/home/ec2-user/test'
+ sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/jobs/my-first-freestyle-job/test.txt ec2-user@3.133.116.40:/home/ec2-user/test'
  sleep 300
  
  }
