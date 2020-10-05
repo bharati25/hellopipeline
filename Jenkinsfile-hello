@@ -14,7 +14,7 @@ sh 'echo hi'
 
 stage ('copy file to tomcat') {
  steps {
- sshagent(['6fa169b8-4378-4863-a4ee-1a9f534832c5']) {
+ sshagent(['ae64ef95-91f8-4c56-abfd-4c81f985086d']) {
  sh 'touch /home/ec2-user/test2.txt'
   
  }
